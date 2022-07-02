@@ -1,0 +1,123 @@
+
+.hero {
+  background-repeat: no-repeat;
+  background-position: center center;
+  // background-size: auto;
+  background-color: var(--hero-background);
+  color: var(--action-color);
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.hero__title {
+  max-width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+
+.hero__order-button {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .hero{
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/responsive/hero_mobile.jpg");
+    background-size: 480px 400px;
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/responsive/hero_tablet.jpg");
+    background-size: 768px 400px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/responsive/hero_desktop.jpg");
+    background-size: 1600px 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
+
+  .hero__title {
+    max-width: 700px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px) ,
+(min-resolution: 192dpi) and (max-width: 767px) ,
+(min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/responsive/hero_mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px) ,
+(min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px) ,
+(min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/responsive/hero_tablet@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px) ,
+(min-resolution: 192dpi) and (min-width: 1200px) ,
+(min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/responsive/hero_desktop@2x.jpg");
+  }
+}
+
+
+  
+  // .hero-container {
+  //   flex-direction: column;
+  // }
+  

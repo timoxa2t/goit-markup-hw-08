@@ -1,0 +1,149 @@
+
+.footer {
+  background: var(--hero-background);
+  color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.footer-contacts-list {
+  margin-top: 20px;
+}
+
+.footer-contacts-list__address {
+  margin: 0;
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.footer-contacts-list__link {
+  text-decoration: none;
+  font-style: normal;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts-list__item{
+  &:not(:last-child) {
+      margin-bottom: 9px;
+  }
+}
+
+.footer-title {
+  font-size: var(--main-font-size);
+  font-weight: var(--title-font-weight);
+  line-height: 1.14;
+  letter-spacing: var(--main-letter-spacing);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.social-list__link_dark {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-form {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text-input {
+  max-width: 450px;
+  height: 50px;
+  background-color: transparent;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--action-color);
+
+  &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-submit-button-text {
+  margin-right: 10px;
+}
+
+.button-send-icon {
+  fill: var(--action-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-contacts-list__link {
+    display: block;
+    text-align: center;
+  }
+
+
+  .footer-form-container {
+    flex-basis: 450px;
+  }  
+
+  .footer-contacts,
+  .footer-socials{
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  
+  .footer-title {
+    text-align: center;
+  }
+
+  .footer-text-input {
+    flex-basis: 450px;
+    margin-bottom: 20px;
+  }
+
+  .footer-form {
+    flex-wrap: wrap;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .footer-socials .social-list{
+    justify-content: start;
+  }
+
+  .footer-form-container {
+    flex-basis: calc(50% - 15px);
+  }  
+
+  .footer-text-input {
+    margin-right: 12px;
+    flex-basis: calc(100% - 212px);
+  }
+}
