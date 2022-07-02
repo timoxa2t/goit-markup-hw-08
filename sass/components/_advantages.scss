@@ -18,6 +18,10 @@
   .advantages-list__item {
     flex-basis: 100%;
   }
+
+  .advantages-list__title {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 769px) {

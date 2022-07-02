@@ -89,10 +89,17 @@
   fill: var(--action-color);
 }
 
+@media screen and (max-width: 767px) {
+  .footer-contacts,
+  .footer-socials {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer-container {
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
   }
 
   .footer-contacts {
@@ -107,12 +114,16 @@
   }
 
   .footer-form-container {
-    flex-basis: 450px;
+    flex-basis: 100%;
+  }
+
+  .footer-form {
+    margin: 0 auto;
+    width: 450px;
   }
 
   .footer-contacts,
   .footer-socials {
-    width: 100%;
     margin-bottom: 60px;
   }
 
