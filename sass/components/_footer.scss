@@ -119,7 +119,7 @@
 
   .footer-form {
     margin: 0 auto;
-    width: 450px;
+    max-width: 450px;
   }
 
   .footer-contacts,
@@ -132,7 +132,8 @@
   }
 
   .footer-text-input {
-    flex-basis: 450px;
+    flex-basis: 100%;
+    max-width: 450px;
     margin-bottom: 20px;
   }
 
